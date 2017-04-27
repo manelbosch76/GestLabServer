@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -45,12 +45,12 @@ public class HistorialEquipos implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "Inicio_Alquiler")
-    @Temporal(TemporalType.TIMESTAMP)
+    //@Temporal(TemporalType.TIMESTAMP)
     private Date inicioAlquiler;
     @Basic(optional = false)
     @NotNull
     @Column(name = "Final_Alquiler")
-    @Temporal(TemporalType.TIMESTAMP)
+    //@Temporal(TemporalType.TIMESTAMP)
     private Date finalAlquiler;
     @JoinColumn(name = "ID_Equipo", referencedColumnName = "id")
     @ManyToOne(optional = false)

@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -45,7 +45,7 @@ public class HistorialProductos implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "Fecha_Compra")
-    @Temporal(TemporalType.DATE)
+    //@Temporal(TemporalType.DATE)
     private Date fechaCompra;
     @Basic(optional = false)
     @NotNull
